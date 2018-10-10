@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+    Name: Kohl Eisenschmidt 
+    Date Created: 10/8/2018
+    Most recent revision:
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+    <title>Home Page</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+    <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Cormorant+Garamond" rel="stylesheet">
+
+    <style>
+        form, label {
+            font-weight: bold;
+        }
+            
+    </style>
+</head>
+
+<html>
+
+    <main><!-- The main element contains all blocks on the page -->
+        <header><!-- The header element contains only the main title at this point. -->
+                <h1>Kohl's Cafe </h1>
+        </header>
+        
+        <nav><!-- The nav element will include navigation buttons or links -->
+            <hr/>
+                <a class="btn" class="btn1" href="index.html">Home</a>
+                <a class="btn" class="btn2" href="menu.html">Menu</a>
+                <a class="btn" class="btn3" href="contact.html">Contact Us</a>
+            <hr/>
+        </nav>
+
+        <form action="submit.html" method="POST">
+                <label for="Name">Name:</label>
+                <input type="text" id="Name" name="Name"> <br><br>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email"> <br><br>
+
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone"> <br><br>
+
+                <label for="contact">Reason for Inquiry:</label>
+                <select id="contact" name="contact"> 
+                    <option value="default" selected>Catering</option>
+                    <option value="privatParty">Private Party</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <br><br>
+
+                <label for="info">Additional Information</label>
+                <textarea id="info" name="info"></textarea><br><br>
+
+                <fieldset>
+                        <legend>Have you ever been to the restaurant</legend>
+                        <input type="radio" id="choice1" name="questionnaire" value="yes">
+                        <label for="choice1">Yes</label><br>
+                        <input type="radio" id="choice2" name="questionnaire" value="no">
+                        <label for="choice2">No</label><br>
+                    </fieldset>
+
+                <fieldset>
+                    <legend>Best days to contact you</legend>
+                    <input type="checkbox" id="monday" name="weekday" value="monday"> 
+                    <label for="frontEnd">M</label><br>
+                    <input type="checkbox" id="tuesday" name="weekday" value="tuesday">
+                    <label for="backEnd">T</label><br>
+                    <input type="checkbox" id="wednesday" name="weekday" value="wednesday">
+                    <label for="database">W</label><br>
+                    <input type="checkbox" id="thursday" name="weekday" value="thursday">
+                    <label for="backEnd">Th</label><br>
+                    <input type="checkbox" id="friday" name="weekday" value="friday">
+                    <label for="database">F</label><br>
+                </fieldset>
+
+                
+
+                <label for="info">Additional Information</label><br />
+                <textarea id="info" name="info"></textarea><br />
+
+                <input type="submit" name="submit" value="Send Request">
+        </form>
+
+        <footer><!-- The footer is a block at the bottom of the page. -->
+            <hr/>
+            <p>123 Sesame Street, New York, New York, 10128</p>
+            <p>(123) 456*7890</p>
+            <!-- <p>&copy; 2018 Kohl Eisenschmidt. All rights reserved.</p> -->
+        </footer>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+body {
+    background-color: #FDE3BE;
+}
+
+header{
+    padding: 30px 10px 20px 10px;
+}
+header, footer {
+    background-color: #5b7d87;
+    /* color: #fef9ff; */
+    color: #FDE3BE;
+    height: 100px;
+    text-align: center;
+    /* padding: 30px 10px 20px 10px; */
+
+    font-family: 'Cinzel', serif;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+nav  {
+    text-decoration: none;
+    
+}
+nav .btn {
+    font-size: 25px;
+    /* color:  #A7A8AA; */
+}
+nav .btn:hover {
+    font-weight: bold;
+}
+nav .btn:link {
+    color:  #A7A8AA;
+}
+nav .btn:visited  {
+    color: rgb(126, 105, 145);  
+}
+
+
+
+h1 {
+    font-size: 50px;
+    transform: scale(1.5, 1);
+    /* width: 400px; */
+    text-align: center;
+}
