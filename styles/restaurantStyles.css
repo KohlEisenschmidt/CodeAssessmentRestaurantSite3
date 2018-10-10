@@ -1,15 +1,15 @@
 body {
-    background-color: #FDE3BE;
+    background-color: #FDE3BE;  
 }
 
-header{
+header {
     padding: 30px 10px 20px 10px;
 }
 header, footer {
     background-color: #5b7d87;
     /* color: #fef9ff; */
     color: #FDE3BE;
-    height: 100px;
+    height: 150px;
     text-align: center;
     /* padding: 30px 10px 20px 10px; */
 
@@ -24,6 +24,8 @@ nav  {
 nav .btn {
     font-size: 25px;
     /* color:  #A7A8AA; */
+    z-index: 10;
+    background-color: #3F3A34;
 }
 nav .btn:hover {
     font-weight: bold;
@@ -35,6 +37,10 @@ nav .btn:visited  {
     color: rgb(126, 105, 145);  
 }
 
+/* nav .btn badge-pill {
+    background-color: #3F3A34;
+} */
+
 
 
 h1 {
@@ -42,4 +48,8 @@ h1 {
     transform: scale(1.5, 1);
     /* width: 400px; */
     text-align: center;
+}
+
+.col-sm-4 {
+    float: left;
 }
