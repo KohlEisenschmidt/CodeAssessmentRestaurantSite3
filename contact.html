@@ -11,6 +11,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             
         <title>Home Page</title>
+        
+        <script type="text/JavaScript" src="javascript.js"></script>
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
         <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
@@ -18,6 +20,7 @@
         <link href="https://fonts.googleapis.com/css?family=Cinzel|Cormorant+Garamond" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
+        <noscript>This site is best viewed with JavaScript enabled.</noscript>
 
         <style>
             form, label {
@@ -38,7 +41,7 @@
                 <nav><!-- The nav element will include navigation buttons or links -->
                     <hr/>
                         <!-- <a class="btn badge-pill" class="btn1" href="index.html">Home</a> -->
-                        <a href="index.html"><i class="fas fa-home"></i></a>
+                        <a href="index.html"><i class="fas fa-home" style="height: 200; font-size: 40px; "></i></a>
                         <a class="btn badge-pill" class="btn2" href="menu.html">Menu</a>
                         <a class="btn badge-pill" class="btn3" href="contact.html">Contact Us</a>
                     <hr/>
@@ -65,7 +68,7 @@
 
                             <div class="form-group">
                                 <label for="emailInput">Email address:</label>
-                                <input type="email" id="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                <input type="text" id="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                             </div>
 
                             <div class="form-group">
@@ -76,7 +79,7 @@
                             <!-- <label for="contact">Reason for Inquiry:</label>
                             <select id="contact" name="contact"> 
                                 <option value="default" selected>Catering</option>
-                                <option value="privatParty">Private Party</option>
+                                <option value="privateParty">Private Party</option>
                                 <option value="feedback">Feedback</option>
                                 <option value="other">Other</option>
                             </select> -->
@@ -85,7 +88,7 @@
                                     <label for="exampleFormControlSelect1 contact">Reason for Inquiry:</label>
                                     <select class="form-control" id="exampleFormControlSelect1 contact" name="contact">
                                       <option value="default" selected>Catering</option>
-                                      <option value="privatParty">Private Party</option>
+                                      <option value="privateParty">Private Party</option>
                                       <option value="feedback">Feedback</option>
                                       <option value="other">Other</option>
                                     </select>

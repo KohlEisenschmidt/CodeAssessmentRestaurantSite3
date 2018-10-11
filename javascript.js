@@ -41,28 +41,37 @@ function validateItems() {
 //        return false;
 //    }  
 
-   var nameInput = document.forms["contactForm"]["nameInput"].value;
-   var emailInput = document.forms["contactForm"]["emailInput"].value;
-   var phoneInput = document.forms["contactForm"]["phoneInput"].value;
+    var nameInput = document.forms["contactForm"]["Name"].value;
+    var emailInput = document.forms["contactForm"]["email"].value;
+    var phoneInput = document.forms["contactForm"]["phone"].value;
 
-   if (nameInput == "" || !isNaN(nameInput)) {
-    alert("Num1 must be filled in with a number.");
-    document.forms["contactForm"]["nameInput"]
-       .parentElement.className = "form-group has-error";
-    document.forms["contactForm"]["nameInput"].focus();
-    return false;
+    var alphaMatch = /[ a-zA-Z]/;
+
+    if (!nameInput.match(alphaMatch)) {
+        alert("Your name should only have letters.");
+        document.forms["contactForm"]["Name"]
+            .parentElement.className = "form-group has-error";
+        document.forms["contactForm"]["Name"].focus();
+        return false;
     }
-    if (emailInput == "" || isNaN(emailInput)) {
-    alert("Num2 must be filled in with a number.");
-    document.forms["contactForm"]["num2"]
-        .parentElement.className = "form-group has-error"
-    document.forms["contactForm"]["emailInput"].focus();
-    return false;
+
+    var emailMatch = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
+
+    if (!emailInput.match(emailMatch)) {
+        alert("Please put in a real email.");
+        document.forms["contactForm"]["email"]
+            .parentElement.className = "form-group has-error"
+        document.forms["contactForm"]["email"].focus();
+        return false;
     }
-    if (phoneInput == "" || isNaN(phoneInput)) {
-    alert("Num2 must be filled in with a number.");
-    document.forms["contactForm"]["phoneInput"]
-        .parentElement.className = "form-group has-error"
-    document.forms["contactForm"]["phoneInput"].focus();
-    return false;
-    }  
+
+    var phoneMatch = /^\(\d{3}\)\s\d{3}-\d{4}/;
+
+    if (!phoneInput.match(phoneMatch)) {
+        alert("Please put in a real phone number.");
+        document.forms["contactForm"]["phone"]
+            .parentElement.className = "form-group has-error"
+        document.forms["contactForm"]["phone"].focus();
+        return false;
+    }
+}
