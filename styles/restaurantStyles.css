@@ -30,10 +30,19 @@ nav .btn {
 nav .btn:hover {
     font-weight: bold;
 }
-nav .btn:link {
+/* nav .btn:link {
     color:  #A7A8AA;
+} */
+/* nav .btn:visited  {
+    color: rgb(126, 105, 145);  
+} */
+nav .btn1:visited  {
+    color: rgb(126, 105, 145);  
 }
-nav .btn:visited  {
+nav .btn2:visited  {
+    color: rgb(126, 105, 145);  
+}
+nav .btn3:visited  {
     color: rgb(126, 105, 145);  
 }
 
